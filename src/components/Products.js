@@ -18,7 +18,7 @@ export default function Products (props) {
                                     <div>
                                         {formatCurrency(product.price)}
                                     </div>
-                                    <button className='button-primary'>Add to cart</button>
+                                    <button className='button button-primary' onClick={() => props.addToCart(product)} >Add to cart</button>
                                 </div>
                             </div>
                         </li>
